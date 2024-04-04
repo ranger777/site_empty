@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/_internal/css/style.css">
+    <link href="/_internal/css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <title>Прокат 54</title>
+    <style>
+        .flash {padding: 10px}
+        .flash.success {border: 1px solid #21D856; background: #aeffc5}
+        .flash.error {border: 1px solid #ff4343; background: #ff9c9c}
+    </style>
+</head>
+<body>
+    <div class="container">
+
+<div class="content">
+    <a href="{{url_for('tools')[9:]}}">Страница с оборудованием </a><br><br>
+    {% for user in users: %}
+    {{'{:06}'.format(user[0])}} - {{user[1]}} - {{user[2]}} - {{user[3]}}<br>
+    {% endfor%}
+    <a href="{{url_for('logout')[9:]}}">Вы авторизованы как <b>{{current_user.get_id()}}</b>. Выйти из профиля? </a>
+</div>
+
+   </div>
+
+</body>
+</html>
