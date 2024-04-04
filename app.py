@@ -9,7 +9,7 @@ from myDB import db_conn #наш класс для подключения к Б�
 #sys.stderr.write(f'vivod v load_user peredali = {user_id}\n') #для вывода в еррол-лог
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'hgszxkjylydmdsfjxzxcbvdfzhbnxdmgdcc'#ключ для шифрования
+app.config['SECRET_KEY'] = 'hgszxkjylydmdsfjxzxcbvdfzhbnxdmgfdsjx'#ключ для шифрования
 
 login_manager = LoginManager(app)
 login_manager.login_view = '/вход'#перенаправляет на страницу логин если не авторизованный пользователь попапл на закрытую страницу
