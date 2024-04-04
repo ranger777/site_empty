@@ -7,7 +7,7 @@ class db_conn():
    def db_connected(self):
       connected = psycopg2.connect(user="....",
                                    # пароль, который указали при установке PostgreSQL
-                                   password="Q....",
+                                   password="....",
                                    host="....",
                                    port="....")
       return connected
