@@ -2,11 +2,11 @@
 import os,sys
 
 #путь к проекту
-sys.path.append('/home/p/prokat54rf/public_html')
+sys.path.append('/home/p/...../public_html')
 #путь к фреймворку
-sys.path.append('/home/p/prokat54rf')
+sys.path.append('/home/p/....')
 #путь к виртуальному окружению
-sys.path.append('/home/p/prokat54rf/.flaskvenv/lib/python3.8/site-packages/')
+sys.path.append('/home/p/..../.flaskvenv/lib/python3.8/site-packages/')
 #исключить системную директорию
 #sys.path.remove('/usr/lib/python3.8/site-packages')
 
